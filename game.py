@@ -25,7 +25,7 @@ while running:
     if keys[pygame.K_DOWN]:
         car_y+=car_speed
     screen.fill((0,255,0))
-    pygame.draw.rect(screen,car_color,(car_x,car_y,car_width,car_height))
+    pygame.draw.circle(screen, car_color, (car_x, car_y), 10)
     pygame.display.update()
     clock.tick(60)
 pygame.quit()
